@@ -18,7 +18,7 @@ def send_notify(context: CallbackContext):
         "symbol": STOCK,
         "apikey": STOCK_API_KEY,
     }
-
+#dghfhgf
     response = requests.get(STOCK_ENDPOINT, params=stock_params)
     data = response.json()["Time Series (Daily)"]
     data_list = [value for (key, value) in data.items()]
